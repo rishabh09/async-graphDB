@@ -1,0 +1,355 @@
+[
+    {
+        "id": "6a7c09ee-c9b3-4c12-aab6-b15daade7946",
+        "type": "Angad",
+        "data": {
+            "name": "Angad",
+            "age": 24
+        },
+        "in": [
+            {
+                "type": "user",
+                "in": "d984ce79-234f-493c-aa5c-74c85b4a81f0"
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "f5523b3d-8e27-47a0-b9dd-f9ef269c2668",
+        "type": "Rishabh Mishra",
+        "data": {
+            "name": "Rishabh",
+            "age": 22
+        },
+        "in": [
+            {
+                "type": "user",
+                "in": "d984ce79-234f-493c-aa5c-74c85b4a81f0"
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "f0dcd0d2-7daf-4f56-8d08-464d1222fd1f",
+        "type": "Rahul",
+        "data": {
+            "name": "Rahul",
+            "age": 25
+        },
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "d984ce79-234f-493c-aa5c-74c85b4a81f0",
+        "type": "Laptop",
+        "data": {
+            "name": "Dell"
+        },
+        "in": [],
+        "out": [
+            {
+                "type": "user",
+                "out": "6a7c09ee-c9b3-4c12-aab6-b15daade7946"
+            },
+            {
+                "type": "user",
+                "out": "f5523b3d-8e27-47a0-b9dd-f9ef269c2668"
+            }
+        ]
+    },
+    {
+        "id": "d45ae4df-7fa3-48a2-bdf4-5a4ee9cca31a",
+        "type": "demigod",
+        "data": {
+            "name": "Hercules",
+            "age": 30
+        },
+        "in": [],
+        "out": [
+            {
+                "type": "father",
+                "out": "2031fe3e-5009-44ef-872f-cb94757ba4dd",
+                "data": "hello jupiter"
+            },
+            {
+                "type": "mother",
+                "out": "8fa6fd33-4475-40c1-aed7-fd1e30b821cb"
+            },
+            {
+                "type": "battled",
+                "out": "9fdee324-d5c6-4569-84ba-10f806d8fdb2",
+                "data": {
+                    "time": 1,
+                    "place": [
+                        38.2,
+                        23.7
+                    ]
+                }
+            },
+            {
+                "type": "battled",
+                "out": "6da523ff-0a8c-4d06-9c2e-987e02255b5a",
+                "data": {
+                    "time": 2,
+                    "place": [
+                        37.7,
+                        22.3
+                    ]
+                }
+            },
+            {
+                "type": "battled",
+                "out": "0f2164ce-f4bf-40c8-b35e-99491455538f",
+                "data": {
+                    "time": 12,
+                    "place": [
+                        37,
+                        22
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "2031fe3e-5009-44ef-872f-cb94757ba4dd",
+        "type": "god",
+        "data": {
+            "name": "Jupiter",
+            "age": 5000
+        },
+        "in": [
+            {
+                "type": "father",
+                "in": "d45ae4df-7fa3-48a2-bdf4-5a4ee9cca31a",
+                "data": "hello jupiter"
+            }
+        ],
+        "out": [
+            {
+                "type": "father",
+                "out": "fc0d30ca-ea1e-4124-9f17-ec49eba131c6"
+            },
+            {
+                "type": "lives",
+                "out": "503a563a-a1c1-4776-8b4a-b91bae6392aa",
+                "data": {
+                    "reason": "loves fresh breeze"
+                }
+            },
+            {
+                "type": "brother",
+                "out": "a6291248-d05e-44e3-9932-336d6e28d89a"
+            },
+            {
+                "type": "brother",
+                "out": "a755ed96-14d9-4e72-a9bf-b406c722c4b3"
+            },
+            {
+                "type": "lives",
+                "out": "67606540-63d0-497e-bce5-38e53f0a4564",
+                "data": {
+                    "reason": "loves the sea"
+                }
+            },
+            {
+                "type": "lives",
+                "out": "cbe6f0ee-747e-48aa-9a83-afa7ee4e40c1",
+                "data": {
+                    "reason": "no fear"
+                }
+            }
+        ]
+    },
+    {
+        "id": "8fa6fd33-4475-40c1-aed7-fd1e30b821cb",
+        "type": "human",
+        "data": {
+            "name": "alcmene",
+            "age": 5000
+        },
+        "in": [
+            {
+                "type": "mother",
+                "in": "d45ae4df-7fa3-48a2-bdf4-5a4ee9cca31a"
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "9fdee324-d5c6-4569-84ba-10f806d8fdb2",
+        "type": "monster",
+        "data": {
+            "name": "nemean"
+        },
+        "in": [
+            {
+                "type": "battled",
+                "in": "d45ae4df-7fa3-48a2-bdf4-5a4ee9cca31a",
+                "data": {
+                    "time": 1,
+                    "place": [
+                        38.2,
+                        23.7
+                    ]
+                }
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "6da523ff-0a8c-4d06-9c2e-987e02255b5a",
+        "type": "monster",
+        "data": {
+            "name": "hydra"
+        },
+        "in": [
+            {
+                "type": "battled",
+                "in": "d45ae4df-7fa3-48a2-bdf4-5a4ee9cca31a",
+                "data": {
+                    "time": 2,
+                    "place": [
+                        37.7,
+                        22.3
+                    ]
+                }
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "0f2164ce-f4bf-40c8-b35e-99491455538f",
+        "type": "monster",
+        "data": {
+            "name": "cerberus"
+        },
+        "in": [
+            {
+                "type": "battled",
+                "in": "d45ae4df-7fa3-48a2-bdf4-5a4ee9cca31a",
+                "data": {
+                    "time": 12,
+                    "place": [
+                        37,
+                        22
+                    ]
+                }
+            },
+            {
+                "type": "pet",
+                "in": "a755ed96-14d9-4e72-a9bf-b406c722c4b3"
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "fc0d30ca-ea1e-4124-9f17-ec49eba131c6",
+        "type": "titan",
+        "data": {
+            "name": "Saturn",
+            "age": 10000
+        },
+        "in": [
+            {
+                "type": "father",
+                "in": "2031fe3e-5009-44ef-872f-cb94757ba4dd"
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "503a563a-a1c1-4776-8b4a-b91bae6392aa",
+        "type": "location",
+        "data": {
+            "name": "Sky"
+        },
+        "in": [
+            {
+                "type": "lives",
+                "in": "2031fe3e-5009-44ef-872f-cb94757ba4dd",
+                "data": {
+                    "reason": "loves fresh breeze"
+                }
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "a6291248-d05e-44e3-9932-336d6e28d89a",
+        "type": "god",
+        "data": {
+            "name": "Neptune",
+            "age": 4500
+        },
+        "in": [
+            {
+                "type": "brother",
+                "in": "2031fe3e-5009-44ef-872f-cb94757ba4dd"
+            }
+        ],
+        "out": [
+            {
+                "type": "brother",
+                "out": "a755ed96-14d9-4e72-a9bf-b406c722c4b3"
+            }
+        ]
+    },
+    {
+        "id": "a755ed96-14d9-4e72-a9bf-b406c722c4b3",
+        "type": "god",
+        "data": {
+            "name": "Pluto",
+            "age": 4000
+        },
+        "in": [
+            {
+                "type": "brother",
+                "in": "2031fe3e-5009-44ef-872f-cb94757ba4dd"
+            },
+            {
+                "type": "brother",
+                "in": "a6291248-d05e-44e3-9932-336d6e28d89a"
+            }
+        ],
+        "out": [
+            {
+                "type": "pet",
+                "out": "0f2164ce-f4bf-40c8-b35e-99491455538f"
+            }
+        ]
+    },
+    {
+        "id": "67606540-63d0-497e-bce5-38e53f0a4564",
+        "type": "location",
+        "data": {
+            "name": "Sea"
+        },
+        "in": [
+            {
+                "type": "lives",
+                "in": "2031fe3e-5009-44ef-872f-cb94757ba4dd",
+                "data": {
+                    "reason": "loves the sea"
+                }
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "cbe6f0ee-747e-48aa-9a83-afa7ee4e40c1",
+        "type": "location",
+        "data": {
+            "name": "Tartarus"
+        },
+        "in": [
+            {
+                "type": "lives",
+                "in": "2031fe3e-5009-44ef-872f-cb94757ba4dd",
+                "data": {
+                    "reason": "no fear"
+                }
+            }
+        ],
+        "out": []
+    }
+]
